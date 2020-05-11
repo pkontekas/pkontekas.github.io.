@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Private School</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top ">
+        <a class="navbar-brand" href="#">Home
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button></a>
+        <div class="collapse navbar-collapse " id="navbarSupportedContent">
+            <ul class="navbar-nav mr-4">
+                <li class="nav-item">
+                    <a class="nav-link" data-value="about" href="#about">About</a> </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-value="news" href="#news">News</a> </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-value="dbChoices" href="#dbChoices">School Forms</a> </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-value="contact" href="#contact">Contact Us</a> </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- welcome Screen -->
+    <header class="header">
+        <div class="overlay">
+            <div class="container">
+                <div class="description">
+                    <h1> <i>Hello and welcome to our Private School!</i><br>
+                        <p> <br>
+                            We hope you are well. We also hope you are relaxed, recharged and ready to
+                            start a new Bootcamp Class. We are so delighted that you are part of our amazing learning
+                            community.
+                            We welcome and value your positive energy and dedication to excellence in education, and we
+                            look
+                            forward to working with you!
+                        </p>
+                        <a data-value="dbChoices" href="#dbChoices">
+                            <button class="btn btn-outline-secondary btn-lg">See more</button></a>
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- About -->
+    <div class="about" id="about">
+        <h1 style="text-align: center">About Us</h1>
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-12">
+                <img src="images/Keble_College.jpg" class="img-fluid">
+                <span class="text-justify">Campus</span>
+            </div>
+            <div class="col-lg-8 col-md-8 col-sm-12 desc">
+
+                <h3>Private PK School Info</h3>
+                <p><br>
+                    Our programs offer top quality education and certificates in data science
+                    and software engineering that have been certified and supported by various
+                    Top-tier Universities.<br><br>
+                    We follow a very similar curriculum as some Software Engineering University Degrees
+                    (Sunderland, Greenwich etc) and also provide similar BAs and MAs Degrees, as well as
+                    day to day hands-on practice that is aimed at the current industrial market needs.<br>
+                    <br>Join us !
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- News section -->
+    <div class="about" id="news">
+        <h1 style="text-align: center">Recent News from Management</h1>
+        <p style="margin-right: 20%; margin-left: 20%;">
+            All signs point to another incredible and productive year. Our skilled and devoted staff
+            is already planning and preparing as we speak. Our enthusiastic office team is
+            registering new signees, ordering needed materials and updating student files. Our hard working
+            and conscientious custodians have spent the entire semester thoroughly cleaning the facility.
+            And,our much-appreciated PTA is gearing up to provide volunteer opportunities, and
+            offer other exciting events and programs. We are indeed a joyous and caring community with the
+            common goals of nurturing responsible, caring students and promoting high-level learning.
+        </p>
+    </div>
+
+    <!-- DB section -->
+    <div class="dbChoices" id="dbChoices">
+        <div class="container">
+            <h1 class="text-center">Our School</h1>
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-12 item">
+                    <a href="Pages/course.html">
+                        <img src="images/course_choice.jpg" class="img-fluid" alt="dbChoices">
+                        <div class="des">Courses</div>
+                    </a>
+                    <span class="text-muted"></span>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-12 item">
+                    <a href="Pages/student.html">
+                        <img src="images/student_choice.jpg" class="img-fluid" alt="dbChoices">
+                        <div class="des">Students</div>
+                    </a>
+                    <span class="text-muted"></span>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-12 item">
+                    <a href="Pages/trainer.html">
+                        <img src="images/trainer_choice.jpg" class="img-fluid" alt="dbChoices">
+                        <div class="des">Trainers</div>
+                    </a>
+                    <span class="text-muted"></span>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-12 item">
+                    <a href="Pages/assignment.html">
+                        <img src="images/assignment_choice.jpg" class="img-fluid" alt="dbChoices">
+                        <div class="des">Assignments</div>
+                    </a>
+                    <span class="text-muted"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact form -->
+    <div class="contact-form" id="contact">
+        <div class="container">
+            <h1 class="text-center">Contact Us</h1>
+            <form>
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-12">
+                        <h1>Get in Touch</h1>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-sm-12 right">
+                        <div class="form-group">
+                            <input type="text" class="form-control form-control-lg" placeholder="Your Name" name="">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control form-control-lg" placeholder="YourEmail@email.com"
+                                name="email">
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control form-control-lg"></textarea>
+                        </div>
+                        <input type="submit" class="btn btn-secondary btn-block" value="Send" name="">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <footer class="footer"><b>&copy; Copyright 2020 PK_PrivateSchool_PK</b></footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>
