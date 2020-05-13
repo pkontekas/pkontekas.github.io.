@@ -45,14 +45,13 @@
             <label for="courseSelect">Course Selection</label>
             <select name="courseSelect" id="courseSelect" class="form-control" required>
                 <option value="course1">Course 1 Java Full-time CB10</option>
-                <option value="course2">Course 2 C# Part-time CB09</option>
+                <option selected value="course2">Course 2 C# Part-time CB09</option>
                 <option value="course3">Course 3 Javascript Full-time CB11</option>
                 <option value="course4">Course 4 Java Part-time CB08</option>
                 <option value="course5">Course 5 C# Full-time CB11</option>
             </select>
             <small class="form-text text-muted">Select a Course for the Assignment</small>
         </div>
-
         <div class="form-group">
             <label for="subDateTime">Deadline Date</label>
             <input type="datetime-local" name="subDateTime" id="subDateTime" class="form-control"
@@ -61,29 +60,32 @@
         </div>
         <div class="form-group">
             <label for="oralMark">Oral Mark Maximum</label>
-            <input type="number" name="oralMark" id="oralMark" class="form-control" value="40" required min="0"
+            <input type="number" name="oralMark" id="oralMark" class="form-control" value="40" required min="20"
                 max="50">
-            <small class="form-text text-muted">Enter maximum value for Oral Mark (max of 50)</small>
+            <small class="form-text text-muted">Enter maximum value for Oral Mark (20 to 50)</small>
         </div>
         <div class="form-group">
             <label for="totalMark">Total Mark Maximum</label>
-            <input type="number" name="totalMark" id="totalMark" class="form-control" value="100" required min="0"
+            <input type="number" name="totalMark" id="totalMark" class="form-control" value="100" required min="50"
                 max="100">
-            <small class="form-text text-muted">Enter maximum value for Total Mark (max of 100)</small>
+            <small class="form-text text-muted">Enter maximum value for Total Mark (50 to 100)</small>
         </div>
-        <button type="submit" class="btn btn-outline-success text-dark font-weight-bold">Update</button>
+        <button type="submit" class="btn btn-outline-success text-dark font-weight-bold">Edit</button>
+        <button type="submit" class="btn btn-outline-info text-dark font-weight-bold">Update</button>
+        <button value="delete" type="delete" class="btn btn-outline-danger text-dark font-weight-bold"
+            onclick="delAssForm()">Delete</button>
+        <button value="reset" type="reset" class="btn btn-outline-warning text-dark font-weight-bold"
+            onclick="deleteForm()">Clear</button>
     </form>
 
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript" src="../js/form-validation.js"></script>
     <script type="text/javascript" src="../js/main.js"></script>
 </body>

@@ -4,14 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Course Add Form</title>
+    <title>Trainer Per Course Creation Form</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="../css/forms.css">
 </head>
 
 <body>
-
     <!-- Home navbar -->
     <nav class="navbar navbar-expand-lg fixed-top ">
         <a class="navbar-brand" href="../index.html">Home</a>
@@ -22,49 +21,42 @@
         <div class="collapse navbar-collapse " id="navbarSupportedContent">
             <ul class="navbar-nav mr-4">
                 <li class="nav-item">
-                    <a class="nav-link" href="course.html">Back to Course Options</a> </li>
+                    <a class="nav-link" href="trainer.html">Back to Trainer Options</a> </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="course.html">Back to Course Options</a>
+                </li>
             </ul>
         </div>
     </nav>
+    <h3 class="h3">Trainer Assignment Form</h3>
 
-    <h3 class="h3">Course Creation Form</h3>
     <form class="form-format main-form needs-validation" action="" novalidate>
         <div class="form-group">
-            <label for="title">Course Title</label>
-            <input type="text" name="title" id="cTitle" class="form-control" required pattern="^(CB.*|cb.*)$"
-                minlength="3" maxlength="10">
-            <small class="form-text text-muted">Title should start with "CB"</small>
-        </div>
-        <div class="form-group">
-            <label for="stream">Stream</label>
-            <select name="stream" id="stream" class="form-control" required>
+            <label for="trainerSelect">Trainer Selection</label>
+            <select name="trainerSelect" id="trainerSelect" class="form-control" required>
                 <option value="" selected disabled hidden>Choose here</option>
-                <option value="Java">Java</option>
-                <option value="C#">C#</option>
-                <option value="Javascript">Javascript</option>
+                <option value="trainer1">Trainer 1 Nikos Karapas</option>
+                <option value="trainer2">Trainer 2 George Pasparakis</option>
+                <option value="trainer3">Trainer 3 Tasos Lelakis</option>
+                <option value="trainer4">Trainer 4 Panagiotis Bozas</option>
+                <option value="trainer5">Trainer 5 Argyris Pagidas</option>
             </select>
-            <small class="form-text text-muted">Select a Course Stream</small>
+            <small class="form-text text-muted">Select a Trainer to assign</small>
         </div>
         <div class="form-group">
-            <label for="type">Type</label>
-            <select name="type" id="type" class="form-control" required>
-                <option value="" selected disabled hidden>Choose here</option>
-                <option value="fulltime">Full-time (3 months)</option>
-                <option value="parttime">Part-time (6 months)</option>
+            <label for="courseSelect">Course Selection</label>
+            <select name="courseSelect" id="courseSelect" class="form-control" multiple required size="5">
+                <option value="" disabled hidden></option>
+                <option value="course1">Course 1 Java Full-time CB10</option>
+                <option value="course2">Course 2 C# Part-time CB09</option>
+                <option value="course3">Course 3 Javascript Full-time CB11</option>
+                <option value="course4">Course 4 Java Part-time CB08</option>
+                <option value="course5">Course 5 C# Full-time CB11</option>
             </select>
-            <small class="form-text text-muted">Select your program</small>
+            <small class="form-text text-muted">Select any number of Courses for the Trainer</small>
         </div>
-        <div class="form-group">
-            <label for="startDate">Start Date</label>
-            <input type="date" name="startDate" id="startDate" class="form-control" required>
-            <small class="form-text text-muted">Input the Course Start Date</small>
-        </div>
-        <div class="form-group">
-            <label for="endDate">End Date</label>
-            <input type="date" name="endDate" id="endDate" class="form-control" required>
-            <small class="form-text text-muted">Input the Course End Date</small>
-        </div>
-        <button type="submit" class="btn btn-outline-success text-dark font-weight-bold">Submit</button>
+        <button type="submit" class="btn btn-outline-success text-dark font-weight-bold">Assign</button>
     </form>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -75,7 +67,6 @@
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
     <script type="text/javascript" src="../js/form-validation.js"></script>
-    <script type="text/javascript" src="../js/main.js"></script>
 </body>
 
 </html>
