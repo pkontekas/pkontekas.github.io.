@@ -7,3 +7,12 @@ $(document).ready(function(){
      scrollTop:$("#" + $(this).data('value')).offset().top
     },1000)
    })
+
+//    var navbarCollapse = function() {
+//     var mainNav = $("#mainNav");
+//     if (mainNav.offset().top > 100) {
+//       mainNav.addClass("navbar-shrink");
+//     } else {
+//       mainNav.removeClass("navbar-shrink");
+//     }
+//   };

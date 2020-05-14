@@ -80,7 +80,7 @@ function submitted() {
   }
 }
 
-$('#my-multiples').chosen({
-  //Here you can change the value of the maximum allowed options
-  min_selected_options: 1
-});
+// $('#my-multiples').chosen({
+//   //Here you can change the value of the maximum allowed options
+//   min_selected_options: 1
+// });
