@@ -17,7 +17,7 @@
         <a class="navbar-brand" href="../index.html">Home</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+            <i title="" class="fa fa-bars"></i>
         </button>
         <div class="collapse navbar-collapse " id="navbarSupportedContent">
             <ul class="navbar-nav mr-4">
@@ -27,39 +27,46 @@
         </div>
     </nav>
     <h3 class="h3">Trainer Creation Form</h3>
-
-    <form class="form-format main-form needs-validation" action="" novalidate>
-        <div class="form-group">
-            <label for="firstname">Firstname</label>
-            <input type="text" name="firstname" id="tFirstname" class="form-control" placeholder="name" required
-                pattern="[a-zA-Z]+" minlength="3" maxlength="30">
-            <div class="invalid-feedback feedback-icon"><i class="fa fa-times"></i>Numbers, spaces & symbols not
-                acceptable, 3 to 30 characters input only.</div>
-            <div class="valid-feedback feedback-icon"><i class="fa fa-check"></i>Looks Good!</div>
-            <small class="form-text text-muted">Use only alphabetic characters</small>
+    <div class="overlay">
+        <div class="container">
+            <form class="form-format main-form needs-validation" action="" novalidate>
+                <div class="form-group">
+                    <label for="firstname">Firstname</label>
+                    <input type="text" name="firstname" id="tFirstname" class="form-control" placeholder="name" required
+                        pattern="[a-zA-Z]+" minlength="3" maxlength="30">
+                    <div class="invalid-feedback feedback-icon"><i class="fa fa-times"></i>Numbers, spaces & symbols not
+                        acceptable, 3 to 30 characters input only.</div>
+                    <div class="valid-feedback feedback-icon"><i class="fa fa-check"></i>Looks Good!</div>
+                    <small class="form-text text-muted">Use only alphabetic characters</small>
+                </div>
+                <div class="form-group">
+                    <label for="lastname">Lastname</label>
+                    <input type="text" name="lastname" id="tLastname" class="form-control" placeholder="surname"
+                        required pattern="[a-zA-Z]+" minlength="3" maxlength="40">
+                    <div class="invalid-feedback feedback-icon"><i class="fa fa-times"></i>Numbers, spaces & symbols not
+                        acceptable, 3 to 40 characters input only.</div>
+                    <div class="valid-feedback">Looks Good!</div>
+                    <small class="form-text text-muted">Use only alphabetic characters</small>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" name="subject" id="subject" class="form-control" required minlength="2"
+                        maxlength="40">
+                    <div class="invalid-feedback feedback-icon"><i class="fa fa-times"></i>2 to 40 acceptable characters
+                        only.</div>
+                    <div class="valid-feedback">Looks Good!</div>
+                    <small class="form-text text-muted">Training Subject such as HTML/SQL/Javascript</small>
+                </div>
+                <div class="form-check py-3">
+                    <input type="checkbox" id="accept-terms" class="form-check-input" required>
+                    <label for="accept-terms" class="form-check-label">Accept Terms &amp; Conditions</label>
+                    <div class="invalid-feedback feedback-icon"><i class="fa fa-times"></i>Please accept terms before
+                        Submitting.</div>
+                </div>
+                <button type="submit" class="btn btn-outline-success text-dark font-weight-bold">Submit</button>
+            </form>
         </div>
-        <div class="form-group">
-            <label for="lastname">Lastname</label>
-            <input type="text" name="lastname" id="tLastname" class="form-control" placeholder="surname" required
-                pattern="[a-zA-Z]+" minlength="3" maxlength="40">
-            <div class="invalid-feedback feedback-icon"><i class="fa fa-times"></i>Numbers, spaces & symbols not acceptable, 3 to 40 characters input only.</div>
-            <div class="valid-feedback">Looks Good!</div>
-            <small class="form-text text-muted">Use only alphabetic characters</small>
-        </div>
-        <div class="form-group">
-            <label for="subject">Subject</label>
-            <input type="text" name="subject" id="subject" class="form-control" required minlength="2" maxlength="40">
-            <div class="invalid-feedback feedback-icon"><i class="fa fa-times"></i>2 to 40 acceptable characters only.</div>
-            <div class="valid-feedback">Looks Good!</div>
-            <small class="form-text text-muted">Training Subject such as HTML/SQL/Javascript</small>
-        </div>
-        <div class="form-check py-3">
-            <input type="checkbox" id="accept-terms" class="form-check-input" required>
-            <label for="accept-terms" class="form-check-label">Accept Terms &amp; Conditions</label>
-            <div class="invalid-feedback feedback-icon"><i class="fa fa-times"></i>Please accept terms before Submitting.</div>
-        </div>
-        <button type="submit" class="btn btn-outline-success text-dark font-weight-bold">Submit</button>
-    </form>
+    </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"

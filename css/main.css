@@ -28,7 +28,7 @@ html,h1,h2,h3,h4,h5,h6,a{
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
-    margin-top: 50px;
+    margin-top: 40px;
    }
 
 .overlay{
@@ -37,26 +37,28 @@ min-height: 100%;
 min-width: 100%;
 left: 0;
 top: 0;
-margin-top: 50px;
+margin-top: 40px;
 background: rgba(230, 230, 230, 0.6);
 }
 
 .description{
     position: absolute;
-    top: 30%;
+    top: 20%;
     margin: auto;
     padding: 2em;
     
 }
 .description h1{
  color:#F97300 ;
+ /* text-align: center; */
 }
 .description p{
  color:#666;
  font-size: 20px;
- font-weight: 600;
+ font-weight: 900;
  font-style: oblique;
- width: 50%;
+ width: 90%;
+ text-align: justify;
  line-height: 1.5;
 }
 .description button{
@@ -96,7 +98,7 @@ background: rgba(230, 230, 230, 0.6);
    .about .desc p{
     line-height:2;
     color:#888;
-    margin-right: 80px;
+    margin-right: 20px;
    }
 
    p{
@@ -158,14 +160,19 @@ background: rgba(230, 230, 230, 0.6);
 
    .h2{
        color: black;
-       margin-top: 100px;
+       margin-top: 80px;
    }
 
    .hugeButton{
-    font-size:x-large;
+    font-size:90%;
+    font-size: 1.2em
    }
 
    .footer{
        text-align: center;
    }
    
+   /* .hide-header{
+       max-width: 800px;
+       display:block;
+   } */

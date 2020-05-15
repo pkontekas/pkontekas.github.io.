@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assignment Per Student per Course Creation Form</title>
+    <title>Assignment Per Student per Course Edit/Update Form</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -33,7 +33,7 @@
         </div>
     </nav>
 
-    <h3 class="h3">Grade Students</h3>
+    <h3 class="h3">Edit/Update Student Grades</h3>
     <div class="overlay">
         <div class="container">
             <form class="form-format main-form needs-validation" action="" novalidate>
@@ -41,11 +41,10 @@
                     <div class="col-lg-7 col-md-7 col-xs-10">
                         <div class="form-group">
                             <label for="courseSelect">Course Selection</label>
-                            <select name="courseSelect" id="courseSelect" class="form-control" multiple required
-                                size="5">
+                            <select name="courseSelect" id="courseSelect" class="form-control" required size="5">
                                 <option value="course1">Course 1 Java Full-time CB10</option>
                                 <option value="course2">Course 2 C# Part-time CB09</option>
-                                <option value="course3">Course 3 Javascript Full-time CB11</option>
+                                <option selected value="course3">Course 3 Javascript Full-time CB11</option>
                                 <option value="course4">Course 4 Java Part-time CB08</option>
                                 <option value="course5">Course 5 C# Full-time CB11</option>
                             </select>
@@ -53,46 +52,46 @@
                         </div>
                         <div class="form-group">
                             <label for="studentSelect"><br><br>Student Selection</label>
-                            <select name="studentSelect" id="studentSelect" class="form-control" required>
-                                <option value="" selected disabled hidden>Choose one</option>
+                            <select name="studentSelect" id="studentSelect" class="form-control" required size="5">
                                 <option value="student1">Student 1 George Ioakimidis</option>
                                 <option value="student2">Student 2 Stavros Kontovas</option>
                                 <option value="student3">Student 3 George Badekas</option>
-                                <option value="student4">Student 4 Costas Papadimitriou</option>
+                                <option selected value="student4">Student 4 Costas Papadimitriou</option>
                                 <option value="student5">Student 5 Eleni Kouvela</option>
                             </select>
-                            <small class="form-text text-muted">Select a Student to grade</small>
+                            <small class="form-text text-muted">Select an enrolled Student to update grade</small>
                         </div>
                         <div class="form-group">
                             <label for="assSelect"><br><br>Assignment Selection</label>
-                            <select name="assSelect" id="assSelect" class="form-control" required>
-                                <option value="" selected disabled hidden>Choose one</option>
+                            <select name="assSelect" id="assSelect" class="form-control" required size="5">
                                 <option value="ass1">Assignment 1 Private School SQL</option>
                                 <option value="ass2">Assignment 2 Zoo Java</option>
                                 <option value="ass3">Assignment 3 Efood C#</option>
-                                <option value="ass4">Assignment 4 Big office</option>
+                                <option selected value="ass4">Assignment 4 Big office</option>
                                 <option value="ass5">Assignment 5 Club</option>
                             </select>
-                            <small class="form-text text-muted">Select an assignment to grade</small>
+                            <small class="form-text text-muted">Select a pending assignment to update grade</small>
                         </div>
                     </div>
                     <div class="col-lg-5 col-md-5 col-xs-12">
                         <div class="form-group">
                             <label for="oralMark">Oral Mark</label>
-                            <input type="number" name="oralMark" id="oralMark" class="form-control" required min="0"
-                                max="50">
-                            <div class="valid-feedback feedback-icon"><i class="fa fa-check"></i>Looks Good!</div>
+                            <input type="number" value="30" name="oralMark" id="oralMark" class="form-control" required
+                                min="0" max="50">
                             <small class="form-text text-muted">Grade Oral Mark (0 to 50)</small>
                         </div>
                         <div class="form-group">
                             <label for="totalMark">Total Mark</label>
-                            <input type="number" name="totalMark" id="totalMark" class="form-control" required min="0"
-                                max="100">
-                            <div class="valid-feedback feedback-icon"><i class="fa fa-check"></i>Looks Good!</div>
+                            <input type="number" value="70" name="totalMark" id="totalMark" class="form-control"
+                                required min="0" max="100">
                             <small class="form-text text-muted">Grade Total Mark (0 to 100)</small>
                         </div>
-                        <button type="submit" class="btn btn-outline-success text-dark font-weight-bold">Submit
-                            Grades</button>
+                        <button type="submit" class="btn btn-outline-success text-dark font-weight-bold">Edit</button>
+                        <button type="update" class="btn btn-outline-info text-dark font-weight-bold">Update</button>
+                        <button value="delete" type="delete" class="btn btn-outline-danger text-dark font-weight-bold"
+                            onclick="deleteCSAForm()">Delete</button>
+                        <button value="reset" type="reset" class="btn btn-outline-warning text-dark font-weight-bold"
+                            onclick="deleteForm()">Clear</button>
                     </div>
                 </div>
             </form>

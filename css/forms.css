@@ -10,16 +10,17 @@
 
 .navbar-collapse{justify-content: flex-end;}
 
-.navbar-toggler{background:#fff !important;}
-
-.navbar-collapse{justify-content: flex-end;}
+.navbar-toggler{
+    background:#F97300 !important; 
+    /* display: block; */
+}
 
 .bg-dark{background-color:#343a40!important;}
 
 .bg-primary{background-color:#007bff!important;}
 
-.form-format{width: 500px; margin: auto;}
+.form-format{width: 90%; margin: auto;}
 
 html,h1,h2,h3,h4,h5,h6,a{font-family: "Raleway";}
 
-.h3{color: gray; text-align: center; margin-top: 90px;}
+.h3{color: gray; text-align: center; margin-top: 90px; margin-bottom: 20px;}

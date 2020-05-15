@@ -7,6 +7,7 @@
     <title>Trainer Per Course Edit/Update Form</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="../css/forms.css">
 
 </head>
@@ -17,7 +18,7 @@
         <a class="navbar-brand" href="../index.html">Home</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+            <i title="" class="fa fa-bars"></i>
         </button>
         <div class="collapse navbar-collapse " id="navbarSupportedContent">
             <ul class="navbar-nav mr-4">
@@ -31,37 +32,40 @@
         </div>
     </nav>
     <h3 class="h3">Trainer Assignment Edit/Update Form</h3>
-
-    <form class="form-format main-form needs-validation" action="" novalidate>
-        <div class="form-group">
-            <label for="trainerSelect">Trainer Selection</label>
-            <select name="trainerSelect" id="trainerSelect" class="form-control" required>
-                <option value="trainer1">Trainer 1 Nikos Karapas</option>
-                <option selected value="trainer2">Trainer 2 George Pasparakis</option>
-                <option value="trainer3">Trainer 3 Tasos Lelakis</option>
-                <option value="trainer4">Trainer 4 Panagiotis Bozas</option>
-                <option value="trainer5">Trainer 5 Argyris Pagidas</option>
-            </select>
-            <small class="form-text text-muted">Select a Trainer to assign</small>
+    <div class="overlay">
+        <div class="container">
+            <form class="form-format main-form needs-validation" action="" novalidate>
+                <div class="form-group">
+                    <label for="trainerSelect">Trainer Selection</label>
+                    <select name="trainerSelect" id="trainerSelect" class="form-control" required>
+                        <option value="trainer1">Trainer 1 Nikos Karapas</option>
+                        <option selected value="trainer2">Trainer 2 George Pasparakis</option>
+                        <option value="trainer3">Trainer 3 Tasos Lelakis</option>
+                        <option value="trainer4">Trainer 4 Panagiotis Bozas</option>
+                        <option value="trainer5">Trainer 5 Argyris Pagidas</option>
+                    </select>
+                    <small class="form-text text-muted">Select a Trainer to assign</small>
+                </div>
+                <div class="form-group">
+                    <label for="courseSelect">Course Selection</label>
+                    <select name="courseSelect" id="courseSelect" class="form-control" multiple required size="5">
+                        <option value="course1">Course 1 Java Full-time CB10</option>
+                        <option selected value="course2">Course 2 C# Part-time CB09</option>
+                        <option value="course3">Course 3 Javascript Full-time CB11</option>
+                        <option value="course4">Course 4 Java Part-time CB08</option>
+                        <option selected value="course5">Course 5 C# Full-time CB11</option>
+                    </select>
+                    <small class="form-text text-muted">Select any number of Courses for the Trainer</small>
+                </div>
+                <button type="submit" class="btn btn-outline-success text-dark font-weight-bold">Edit</button>
+                <button type="update" class="btn btn-outline-info text-dark font-weight-bold">Update</button>
+                <button value="delete" type="delete" class="btn btn-outline-danger text-dark font-weight-bold"
+                    onclick="delTrPerCoForm()">Delete</button>
+                <button value="reset" type="reset" class="btn btn-outline-warning text-dark font-weight-bold"
+                    onclick="deleteForm()">Clear</button>
+            </form>
         </div>
-        <div class="form-group">
-            <label for="courseSelect">Course Selection</label>
-            <select name="courseSelect" id="courseSelect" class="form-control" multiple required size="5">
-                <option value="course1">Course 1 Java Full-time CB10</option>
-                <option selected value="course2">Course 2 C# Part-time CB09</option>
-                <option value="course3">Course 3 Javascript Full-time CB11</option>
-                <option value="course4">Course 4 Java Part-time CB08</option>
-                <option selected value="course5">Course 5 C# Full-time CB11</option>
-            </select>
-            <small class="form-text text-muted">Select any number of Courses for the Trainer</small>
-        </div>
-        <button type="submit" class="btn btn-outline-success text-dark font-weight-bold">Edit</button>
-        <button type="update" class="btn btn-outline-info text-dark font-weight-bold">Update</button>
-        <button value="delete" type="delete" class="btn btn-outline-danger text-dark font-weight-bold"
-            onclick="delTrPerCoForm()">Delete</button>
-        <button value="reset" type="reset" class="btn btn-outline-warning text-dark font-weight-bold"
-            onclick="deleteForm()">Clear</button>
-    </form>
+    </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"

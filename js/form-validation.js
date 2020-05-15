@@ -60,6 +60,14 @@ function delStPerCoForm(){
   document.getElementById("courseSelect").selectedIndex = -1;
 }
 
+function deleteCSAForm(){
+  document.getElementById("courseSelect").selectedIndex = -1;
+  document.getElementById("studentSelect").selectedIndex = -1;
+  document.getElementById("assSelect").selectedIndex = -1;
+  jQuery("input").each(function(){
+    jQuery(this).val('');
+});}
+
 function deleteForm(){
   jQuery("input").each(function(){
      jQuery(this).val('');

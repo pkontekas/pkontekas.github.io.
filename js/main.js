@@ -16,3 +16,8 @@ $(document).ready(function(){
 //       mainNav.removeClass("navbar-shrink");
 //     }
 //   };
+
+//collapse navbar disappears on click
+$('.navbar-nav>li>a').on('click', function(){
+    $('.navbar-collapse').collapse('hide');
+});
