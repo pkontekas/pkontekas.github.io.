@@ -7,6 +7,7 @@
     <title>Student Edit Form</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="../css/forms.css">
 </head>
 
@@ -33,12 +34,16 @@
             <label for="firstname">Firstname</label>
             <input type="text" name="firstname" id="sFirstname" value="John" class="form-control" required
                 pattern="[a-zA-Z]+" minlength="3" maxlength="30">
+            <div class="invalid-feedback feedback-icon"><i class="fa fa-times"></i>Numbers, spaces & symbols not
+                acceptable, 3 to 30 characters input only.</div>
             <small class="form-text text-muted">Use only alphabetic characters</small>
         </div>
         <div class="form-group">
             <label for="lastname">Lastname</label>
             <input type="text" name="lastname" id="sLastname" value="Smith" class="form-control" required
                 pattern="[a-zA-Z]+" minlength="3" maxlength="40">
+            <div class="invalid-feedback feedback-icon"><i class="fa fa-times"></i>Numbers, spaces & symbols not
+                acceptable, 3 to 40 characters input only.</div>
             <small class="form-text text-muted">Use only alphabetic characters</small>
         </div>
         <div class="form-group">
@@ -50,7 +55,7 @@
             <label for="tuitionFees">Tuition Fees (in Euros)</label>
             <input type="number" name="tuitionFees" id="tuitionFees" value="1750" class="form-control" required min="0"
                 max="3000">
-            <small class="form-text text-muted">Only Range 0 to 3k euros acceptable</small>
+            <small class="form-text text-muted">Only up to 3k euros acceptable</small>
         </div>
         <button type="submit" class="btn btn-outline-success text-dark font-weight-bold">Edit</button>
         <button type="update" class="btn btn-outline-info text-dark font-weight-bold">Update</button>

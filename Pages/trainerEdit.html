@@ -7,6 +7,7 @@
     <title>Trainer Edit Form</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="../css/forms.css">
 </head>
 
@@ -33,18 +34,23 @@
             <label for="firstname">Firstname</label>
             <input type="text" name="firstname" id="tFirstname" value="Argyris" class="form-control" required
                 pattern="[a-zA-Z]+" minlength="3" maxlength="30">
+            <div class="invalid-feedback feedback-icon"><i class="fa fa-times"></i>Numbers, spaces & symbols not
+                acceptable, 3 to 30 characters input only.</div>
             <small class="form-text text-muted">Use only alphabetic characters</small>
         </div>
         <div class="form-group">
             <label for="lastname">Lastname</label>
             <input type="text" name="lastname" id="tLastname" value="Pagidas" class="form-control" required
                 pattern="[a-zA-Z]+" minlength="3" maxlength="40">
+            <div class="invalid-feedback feedback-icon"><i class="fa fa-times"></i>Numbers, spaces & symbols not
+                acceptable, 3 to 40 characters input only.</div>
             <small class="form-text text-muted">Use only alphabetic characters</small>
         </div>
         <div class="form-group">
             <label for="subject">Subject</label>
             <input type="text" name="subject" id="subject" value="SQL" class="form-control" required minlength="2"
                 maxlength="40">
+            <div class="invalid-feedback feedback-icon"><i class="fa fa-times"></i>2 to 40 characters input only.</div>
             <small class="form-text text-muted">Training Subject such as HTML/SQL/Javascript</small>
         </div>
         <div class="form-check py-3">
