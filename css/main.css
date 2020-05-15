@@ -31,13 +31,21 @@ html,h1,h2,h3,h4,h5,h6,a{
     margin-top: 50px;
    }
 
+   .formheader{
+    background-image: url('../images/universityLecture.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    margin-top: 100px;
+   }
+
 .overlay{
 position: absolute;
 min-height: 100%;
 min-width: 100%;
 left: 0;
 top: 0;
-margin-top: 40px;
+/* margin-top: 40px; */
 background: rgba(230, 230, 230, 0.6);
 }
 
@@ -79,8 +87,8 @@ background: rgba(230, 230, 230, 0.6);
    }
    .about img{
     height: 100%;
-       width: 100%;
-       border-radius: 50%
+    width: 100%;
+    border-radius: 50%
    }
    .about span{
     display: block;
@@ -99,11 +107,20 @@ background: rgba(230, 230, 230, 0.6);
     line-height:2;
     color:#888;
     margin-right: 20px;
+    font-size: 22;
+   }
+
+   .about p{
+    color:#888;
+    line-height:2;
+    font-size: 22;
+    font-weight: 500;
    }
 
    p{
-    color:#888;
     line-height:2;
+    color: black;
+    font-size: 22;
    }
 
    .dbChoices{
@@ -171,5 +188,4 @@ background: rgba(230, 230, 230, 0.6);
 
    .footer{
        text-align: center;
-       margin-top: 40px;
    }
