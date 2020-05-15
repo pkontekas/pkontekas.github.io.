@@ -79,7 +79,7 @@ function deleteForm(){
 // }
 
 function submitted() {
-  if (confirm('Do you want to submit?')) {
+  if (confirm('Do you want to submit the Form?')) {
       yourformelement.submit();
   } else {
       return false;

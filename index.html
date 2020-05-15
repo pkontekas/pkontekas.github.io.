@@ -13,7 +13,7 @@
 
 <body>
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg fixed-top ">
+    <nav class="navbar navbar-expand-lg fixed-top">
         <a class="navbar-brand" href="#">Home
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle here">
@@ -39,20 +39,25 @@
                 <div class="overlay">
                     <div class="container">
                         <div class="description">
-
                             <h1> <i>Hello and welcome to our Private School!</i><br>
-                                <p> <br>
+                                <p class="d-block d-sm-none d-none d-sm-block d-md-none"><br>
                                     We hope you are well. We also hope you are relaxed, recharged and ready to
                                     start a new Bootcamp Class. We are so delighted that you are part of our amazing
                                     learning community.
                                     We welcome and value your positive energy and dedication to excellence in education,
-                                    and
-                                    we look forward to working with you!
+                                    and we look forward to working with you!
+                                </p>
+                                <p style="padding-right: 400px;"
+                                    class="d-none d-lg-none d-lg-block d-xl-none d-xl-block"><br>
+                                    We hope you are well. We also hope you are relaxed, recharged and ready to
+                                    start a new Bootcamp Class. We are so delighted that you are part of our amazing
+                                    learning community.
+                                    We welcome and value your positive energy and dedication to excellence in education,
+                                    and we look forward to working with you!
                                 </p>
                                 <a data-value="dbChoices" href="#dbChoices">
                                     <button class="btn btn-outline-secondary btn-lg">See more</button></a>
                             </h1>
-
                         </div>
                     </div>
                 </div>
@@ -60,67 +65,87 @@
         </div>
     </div>
     <!-- About -->
-    <div class="about" id="about">
-        <h1 style="text-align: center">About Us</h1>
-        <div class="row">
-            <div class="col-lg-5 col-md-5 col-xs-12 desc">
-                <img src="images/Keble_College.jpg" class="img-fluid">
-                <span class="text-justify">Campus</span>
-            </div>
-            <div class="col-lg-7 col-md-7 col-xs-12 desc">
-                <h3>Private PK School Info</h3>
-                <p style="text-align: center; text-align: justify;"><br>
-                    Our programs offer top quality education and certificates in data science
-                    and software engineering which have been certified and supported by various
-                    Top-tier Universities.<br><br>
-                    We follow a very similar curriculum as some Software Engineering University Degrees
-                    (Sunderland, Greenwich etc) and also provide similar BAs and MAs Degrees, as well as
-                    day to day hands-on practice that is aimed at the current industrial market needs.<br>
-                    <br>Join us !
-                </p>
+    <div class="container-fluid">
+        <div class="about" id="about">
+            <h1 class="text-center">About Us</h1>
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-xs-12 desc">
+                    <img src="images/Keble_College.jpg" class="img-fluid">
+                    <span class="text-justify">Campus</span>
+                </div>
+                <div class="col-lg-6 col-md-6 col-xs-12 desc">
+                    <h3>Private PK School Info</h3>
+                    <p style="text-align: center; text-align: justify;"><br>
+                        Our programs offer top quality education and certificates in data science
+                        and software engineering which have been certified and supported by various
+                        Top-tier Universities.<br><br>
+                        We follow a very similar curriculum as some Software Engineering University Degrees
+                        (Sunderland, Greenwich etc) and also provide similar BAs and MAs Degrees, as well as
+                        day to day hands-on practice that is aimed at the current industrial market needs.<br>
+                        <br>Join us !
+                    </p>
+                </div>
             </div>
         </div>
     </div>
     <!-- News section -->
-    <div class="about" id="news">
-        <h1 style="text-align: center">Recent News from Management</h1>
-        <p style="text-align: justify; margin-right: 10%; margin-left: 10%;">
-            All signs point to another incredible and productive year. Our skilled and devoted staff
-            is already planning and preparing as we speak. Our enthusiastic office team is
-            registering new signees, ordering needed materials and updating student files. Our hard working
-            and conscientious custodians have spent the entire semester thoroughly cleaning the facility.<br><br>
-            Furthermore, our much-appreciated PTA is gearing up to provide volunteer opportunities and
-            offer other exciting events and programs. We are indeed a joyous and caring community with the
-            common goals of nurturing responsible, caring students and promoting high-level learning.
-        </p>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-xs-12">
+                <div class="about" id="news">
+                    <h1 class="text-center">Recent News from Management</h1>
+                    <p class="d-block d-sm-none d-none d-sm-block d-md-none"
+                        style="text-align: justify;">
+                        All signs point to another incredible and productive year. Our skilled and devoted staff
+                        is already planning and preparing as we speak. Our enthusiastic office team is
+                        registering new signees, ordering needed materials and updating student files. Our hard working
+                        and conscientious custodians have spent the entire semester thoroughly cleaning the
+                        facility.<br><br>
+                        Furthermore, our much-appreciated PTA is gearing up to provide volunteer opportunities and
+                        offer other exciting events and programs. We are indeed a joyous and caring community with the
+                        common goals of nurturing responsible, caring students and promoting high-level learning.
+                    </p>
+                    <p style="text-align: justify; margin-right: 22%; margin-left: 22%;" class="d-none d-lg-none d-lg-block d-xl-none d-xl-block">
+                        All signs point to another incredible and productive year. Our skilled and devoted staff
+                        is already planning and preparing as we speak. Our enthusiastic office team is
+                        registering new signees, ordering needed materials and updating student files. Our hard working
+                        and conscientious custodians have spent the entire semester thoroughly cleaning the
+                        facility.<br><br>
+                        Furthermore, our much-appreciated PTA is gearing up to provide volunteer opportunities and
+                        offer other exciting events and programs. We are indeed a joyous and caring community with the
+                        common goals of nurturing responsible, caring students and promoting high-level learning.
+                    </p>
+                </div>
+            </div>
+        </div>
     </div>
     <!-- School Form section -->
     <div class="dbChoices" id="dbChoices">
         <div class="container">
             <h1 class="text-center">Our School</h1>
             <div class="row">
-                <div class="col-lg-3 col-md-3 col-sm-12 item">
+                <div class="col-lg-3 col-md-6 col-xs-12 item">
                     <a id="des" href="Pages/course.html">
                         <img src="images/course_choice.jpg" class="img-fluid" alt="dbChoices">
                         <div class="des">Courses</div>
                     </a>
                     <span class="text-muted"></span>
                 </div>
-                <div class="col-lg-3 col-md-3 col-sm-12 item">
+                <div class="col-lg-3 col-md-6 col-xs-12 item">
                     <a href="Pages/student.html">
                         <img src="images/student_choice.jpg" class="img-fluid" alt="dbChoices">
                         <div class="des">Students</div>
                     </a>
                     <span class="text-muted"></span>
                 </div>
-                <div class="col-lg-3 col-md-3 col-sm-12 item">
+                <div class="col-lg-3 col-md-6 col-xs-12 item">
                     <a href="Pages/trainer.html">
                         <img src="images/trainer_choice.jpg" class="img-fluid" alt="dbChoices">
                         <div class="des">Trainers</div>
                     </a>
                     <span class="text-muted"></span>
                 </div>
-                <div class="col-lg-3 col-md-3 col-sm-12 item">
+                <div class="col-lg-3 col-md-6 col-xs-12 item">
                     <a href="Pages/assignment.html">
                         <img src="images/assignment_choice.jpg" class="img-fluid" alt="dbChoices">
                         <div class="des">Assignments</div>
@@ -138,10 +163,10 @@
             <h1 class="d-none d-md-block text-center">Contact Us</h1>
             <form>
                 <div class="row">
-                    <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="col-lg-3 col-md-3 col-xs-12">
                         <h1 style="text-align: center;">Get in Touch</h1>
                     </div>
-                    <div class="col-lg-8 col-md-8 col-sm-12 right">
+                    <div class="col-lg-9 col-md-9 col-xs-12 right">
                         <div class="form-group">
                             <input type="text" class="form-control form-control-lg" placeholder="Your Name" name="">
                         </div>

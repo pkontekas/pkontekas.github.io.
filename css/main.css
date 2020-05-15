@@ -2,7 +2,7 @@
 
 .navbar{background:#F97300;}
 
-.nav-link , .navbar-brand{color: #f4f4f4; cursor: pointer;}
+.nav-link, .navbar-brand{color: #f4f4f4; cursor: pointer;}
 
 .nav-link{margin-right: 1em !important;}
 
@@ -28,7 +28,7 @@ html,h1,h2,h3,h4,h5,h6,a{
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
-    margin-top: 40px;
+    margin-top: 50px;
    }
 
 .overlay{
@@ -68,14 +68,14 @@ background: rgba(230, 230, 230, 0.6);
 }
 
 .about{
-    margin: 4em 0;
+    margin: 2em 0;
     padding: 1em;
     position: relative;
    }
    .about h1{
     color:#F97300;
-    margin: 2em;
-    position: center;
+    margin-bottom: 2em;
+    position: left;
    }
    .about img{
     height: 100%;
@@ -159,8 +159,9 @@ background: rgba(230, 230, 230, 0.6);
    }
 
    .h2{
-       color: black;
-       margin-top: 80px;
+    color: #10828C;
+    border-color: solid #10828C;
+    margin-top: 80px;
    }
 
    .hugeButton{
@@ -170,9 +171,5 @@ background: rgba(230, 230, 230, 0.6);
 
    .footer{
        text-align: center;
+       margin-top: 40px;
    }
-   
-   /* .hide-header{
-       max-width: 800px;
-       display:block;
-   } */
