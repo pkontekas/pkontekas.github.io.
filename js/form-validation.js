@@ -74,19 +74,10 @@ function deleteForm(){
   });
 }
 
-// function alertOK(){
-//   return console.log("Successful Creation!");
-// }
-
 function submitted() {
-  if (confirm('Do you want to submit the Form?')) {
+  if (confirm('Are you sure you want to Submit the Form?')) {
       yourformelement.submit();
   } else {
       return false;
   }
 }
-
-// $('#my-multiples').chosen({
-//   //Here you can change the value of the maximum allowed options
-//   min_selected_options: 1
-// });

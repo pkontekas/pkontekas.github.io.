@@ -30,42 +30,48 @@
             </ul>
         </div>
     </nav>
-    <h3 class="h3">Trainer Assignment Form</h3>
-    <div class="overlay">
-        <div class="container">
-            <form class="form-format main-form needs-validation" action="" novalidate>
-                <div class="form-group">
-                    <label for="trainerSelect">Trainer Selection</label>
-                    <select name="trainerSelect" id="trainerSelect" class="form-control" required>
-                        <option value="" selected disabled hidden>Choose here</option>
-                        <option value="trainer1">Trainer 1 Nikos Karapas</option>
-                        <option value="trainer2">Trainer 2 George Pasparakis</option>
-                        <option value="trainer3">Trainer 3 Tasos Lelakis</option>
-                        <option value="trainer4">Trainer 4 Panagiotis Bozas</option>
-                        <option value="trainer5">Trainer 5 Argyris Pagidas</option>
-                    </select>
-                    <small class="form-text text-muted">Select a Trainer to assign</small>
+
+    <div style="background-image: url(../images/AI_01.jpg)" class="bg-img">
+        <div class="overlay main-expand">
+            <div class="d-flex justify-content-left align-items-center container">
+                <div class="row">
+                    <form class="form-format main-form formcontainer needs-validation" action="" novalidate>
+                        <h3 class="h3">Trainer Assignment Form</h3>
+                        <div class="form-group">
+                            <label for="trainerSelect">Trainer Selection</label>
+                            <select name="trainerSelect" id="trainerSelect" class="form-control" required>
+                                <option value="" selected disabled hidden>Choose here</option>
+                                <option value="trainer1">Trainer 1 Nikos Karapas</option>
+                                <option value="trainer2">Trainer 2 George Pasparakis</option>
+                                <option value="trainer3">Trainer 3 Tasos Lelakis</option>
+                                <option value="trainer4">Trainer 4 Panagiotis Bozas</option>
+                                <option value="trainer5">Trainer 5 Argyris Pagidas</option>
+                            </select>
+                            <small class="form-text text-muted">Select a Trainer to assign</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="courseSelect">Course Selection</label>
+                            <select name="courseSelect" id="courseSelect" class="form-control" multiple required
+                                size="5">
+                                <option value="" disabled hidden></option>
+                                <option value="course1">Course 1 Java Full-time CB10</option>
+                                <option value="course2">Course 2 C# Part-time CB09</option>
+                                <option value="course3">Course 3 Javascript Full-time CB11</option>
+                                <option value="course4">Course 4 Java Part-time CB08</option>
+                                <option value="course5">Course 5 C# Full-time CB11</option>
+                            </select>
+                            <small class="form-text text-muted">Select any number of Courses for the Trainer</small>
+                        </div>
+                        <button type="submit" class="btn btn-outline-success text-dark font-weight-bold"
+                            onclick="submitted()">Assign</button>
+                    </form>
                 </div>
-                <div class="form-group">
-                    <label for="courseSelect">Course Selection</label>
-                    <select name="courseSelect" id="courseSelect" class="form-control" multiple required size="5">
-                        <option value="" disabled hidden></option>
-                        <option value="course1">Course 1 Java Full-time CB10</option>
-                        <option value="course2">Course 2 C# Part-time CB09</option>
-                        <option value="course3">Course 3 Javascript Full-time CB11</option>
-                        <option value="course4">Course 4 Java Part-time CB08</option>
-                        <option value="course5">Course 5 C# Full-time CB11</option>
-                    </select>
-                    <small class="form-text text-muted">Select any number of Courses for the Trainer</small>
-                </div>
-                <button type="submit" class="btn btn-outline-success text-dark font-weight-bold">Assign</button>
-            </form>
+            </div>
         </div>
     </div>
 
-    <footer style="margin-top: 50px;" class="navbar navbar-expand-lg text-center justify-content-center footer"><b>&copy; Copyright
-            2020 Bootcamp CB10
-            PartTime Java PrivateSchool by Philip Kontekas</b></footer>
+    <footer class="navbar navbar-expand-lg text-center justify-content-center footer"><b>&copy; Copyright
+            2020 Bootcamp CB10 PartTime Java PrivateSchool by Philip Kontekas</b></footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"

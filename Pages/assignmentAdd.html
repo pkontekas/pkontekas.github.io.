@@ -27,66 +27,78 @@
             </ul>
         </div>
     </nav>
-    <h3 class="h3">Assignment Creation Form</h3>
-    <div class="overlay">
-        <div class="container">
-            <form class="form-format main-form needs-validation" action="" novalidate>
-                <div class="form-group">
-                    <label for="title">Title</label>
-                    <input type="text" name="title" id="aTitle" class="form-control" required minlength="3"
-                        maxlength="40">
-                    <div class="invalid-feedback feedback-icon"><i class="fa fa-times"></i>3 to 40 characters input
-                        only.</div>
-                    <div class="valid-feedback feedback-icon"><i class="fa fa-check"></i>Looks Good!</div>
-                    <small class="form-text text-muted">Fill in an assignment title</small>
+
+    <div class="bg-img">
+        <div class="overlay main-expand">
+            <div class="d-flex justify-content-center align-items-center container">
+                <div class="row">
+                    <form class="form-format main-form formcontainer needs-validation" action="" novalidate>
+                        <h3 class="h3">Assignment Creation Form</h3>
+                        <div class="form-group">
+                            <label for="title">Title</label>
+                            <input type="text" name="title" id="aTitle" class="form-control" required minlength="3"
+                                maxlength="40">
+                            <div class="invalid-feedback feedback-icon"><i class="fa fa-times"></i>3 to 40 characters
+                                input
+                                only.</div>
+                            <div class="valid-feedback feedback-icon"><i class="fa fa-check"></i>Looks Good!</div>
+                            <small class="form-text text-muted">Fill in an assignment title</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="description">Description</label>
+                            <input type="text" name="description" id="aDescription" class="form-control" required
+                                minlength="4" maxlength="50">
+                            <div class="invalid-feedback feedback-icon"><i class="fa fa-times"></i>4 to 50 characters
+                                input
+                                only.</div>
+                            <div class="valid-feedback feedback-icon"><i class="fa fa-check"></i>Looks Good!</div>
+                            <small class="form-text text-muted">Fill in a description</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="courseSelect">Course Selection</label>
+                            <select name="courseSelect" id="courseSelect" class="form-control" required>
+                                <option value="" selected disabled hidden>Choose here</option>
+                                <option value="course1">Course 1 Java Full-time CB10</option>
+                                <option value="course2">Course 2 C# Part-time CB09</option>
+                                <option value="course3">Course 3 Javascript Full-time CB11</option>
+                                <option value="course4">Course 4 Java Part-time CB08</option>
+                                <option value="course5">Course 5 C# Full-time CB11</option>
+                            </select>
+                            <small class="form-text text-muted">Select a Course for the Assignment</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="subDateTime">Deadline Date</label>
+                            <input type="datetime-local" name="subDateTime" id="subDateTime" class="form-control"
+                                required>
+                            <div class="invalid-feedback feedback-icon"><i class="fa fa-times"></i>Fill both Date and
+                                Time.
+                            </div>
+                            <div class="valid-feedback feedback-icon"><i class="fa fa-check"></i>Looks Good!</div>
+                            <small class="form-text text-muted">Enter the assignment deadline date and time in
+                                AM/PM</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="oralMark">Oral Mark Maximum</label>
+                            <input type="number" name="oralMark" id="oralMark" class="form-control" required min="20"
+                                max="50">
+                            <div class="valid-feedback feedback-icon"><i class="fa fa-check"></i>Looks Good!</div>
+                            <small class="form-text text-muted">Enter maximum value for Oral Mark (20 to 50)</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="totalMark">Total Mark Maximum</label>
+                            <input type="number" name="totalMark" id="totalMark" class="form-control" required min="50"
+                                max="100">
+                            <div class="valid-feedback feedback-icon"><i class="fa fa-check"></i>Looks Good!</div>
+                            <small class="form-text text-muted">Enter maximum value for Total Mark (50 to 100)</small>
+                        </div>
+                        <button type="submit" class="btn btn-outline-success text-dark font-weight-bold"
+                            onclick="submitted()">Submit</button>
+                    </form>
                 </div>
-                <div class="form-group">
-                    <label for="description">Description</label>
-                    <input type="text" name="description" id="aDescription" class="form-control" required minlength="4"
-                        maxlength="50">
-                    <div class="invalid-feedback feedback-icon"><i class="fa fa-times"></i>4 to 50 characters input
-                        only.</div>
-                    <div class="valid-feedback feedback-icon"><i class="fa fa-check"></i>Looks Good!</div>
-                    <small class="form-text text-muted">Fill in a description</small>
-                </div>
-                <div class="form-group">
-                    <label for="courseSelect">Course Selection</label>
-                    <select name="courseSelect" id="courseSelect" class="form-control" required>
-                        <option value="" selected disabled hidden>Choose here</option>
-                        <option value="course1">Course 1 Java Full-time CB10</option>
-                        <option value="course2">Course 2 C# Part-time CB09</option>
-                        <option value="course3">Course 3 Javascript Full-time CB11</option>
-                        <option value="course4">Course 4 Java Part-time CB08</option>
-                        <option value="course5">Course 5 C# Full-time CB11</option>
-                    </select>
-                    <small class="form-text text-muted">Select a Course for the Assignment</small>
-                </div>
-                <div class="form-group">
-                    <label for="subDateTime">Deadline Date</label>
-                    <input type="datetime-local" name="subDateTime" id="subDateTime" class="form-control" required>
-                    <div class="invalid-feedback feedback-icon"><i class="fa fa-times"></i>Fill both Date and Time.
-                    </div>
-                    <div class="valid-feedback feedback-icon"><i class="fa fa-check"></i>Looks Good!</div>
-                    <small class="form-text text-muted">Enter the assignment deadline date and time in AM/PM</small>
-                </div>
-                <div class="form-group">
-                    <label for="oralMark">Oral Mark Maximum</label>
-                    <input type="number" name="oralMark" id="oralMark" class="form-control" required min="20" max="50">
-                    <div class="valid-feedback feedback-icon"><i class="fa fa-check"></i>Looks Good!</div>
-                    <small class="form-text text-muted">Enter maximum value for Oral Mark (20 to 50)</small>
-                </div>
-                <div class="form-group">
-                    <label for="totalMark">Total Mark Maximum</label>
-                    <input type="number" name="totalMark" id="totalMark" class="form-control" required min="50"
-                        max="100">
-                    <div class="valid-feedback feedback-icon"><i class="fa fa-check"></i>Looks Good!</div>
-                    <small class="form-text text-muted">Enter maximum value for Total Mark (50 to 100)</small>
-                </div>
-                <button type="submit" class="btn btn-outline-success text-dark font-weight-bold">Submit</button>
-            </form>
+            </div>
         </div>
     </div>
-    <footer style="margin-top: 30px;" class="navbar text-center navbar-expand-lg justify-content-center footer"><b>&copy; Copyright
+    <footer class="navbar text-center navbar-expand-lg justify-content-center footer"><b>&copy; Copyright
             2020 Bootcamp CB10
             PartTime Java PrivateSchool by Philip Kontekas</b></footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

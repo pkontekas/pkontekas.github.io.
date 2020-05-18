@@ -27,50 +27,56 @@
             </ul>
         </div>
     </nav>
-    <h3 class="h3">Student Edit/Update Form</h3>
-    <div class="overlay">
-        <div class="container">
-            <form class="form-format main-form needs-validation" action="" novalidate>
-                <div class="form-group">
-                    <label for="firstname">Firstname</label>
-                    <input type="text" name="firstname" id="sFirstname" value="John" class="form-control" required
-                        pattern="[a-zA-Z]+" minlength="3" maxlength="30">
-                    <div class="invalid-feedback feedback-icon"><i class="fa fa-times"></i>Numbers, spaces & symbols not
-                        acceptable, 3 to 30 characters input only.</div>
-                    <small class="form-text text-muted">Use only alphabetic characters</small>
+
+    <div style="background-image: url(../images/nature_02.jpg)" class="bg-img">
+        <div class="overlay main-expand">
+            <div class="d-flex justify-content-center align-items-center container">
+                <div class="row">
+                    <form class="form-format main-form formcontainer needs-validation" action="" novalidate>
+                        <h3 class="h3">Student Edit/Update Form</h3>
+                        <div class="form-group">
+                            <label for="firstname">Firstname</label>
+                            <input type="text" name="firstname" id="sFirstname" value="John" class="form-control"
+                                required pattern="[a-zA-Z]+" minlength="2" maxlength="30">
+                            <div class="invalid-feedback feedback-icon"><i class="fa fa-times"></i>Numbers, spaces &
+                                symbols not acceptable, 2 to 30 characters input only.</div>
+                            <small class="form-text text-muted">Use only alphabetic characters</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastname">Lastname</label>
+                            <input type="text" name="lastname" id="sLastname" value="Smith" class="form-control"
+                                required pattern="[a-zA-Z]+" minlength="2" maxlength="40">
+                            <div class="invalid-feedback feedback-icon"><i class="fa fa-times"></i>Numbers, spaces &
+                                symbols not acceptable, 2 to 40 characters input only.</div>
+                            <small class="form-text text-muted">Use only alphabetic characters</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="birthday">Date of Birth</label>
+                            <input type="date" name="birthday" id="birthday" value="1983-08-07" class="form-control"
+                                required max="2005-01-01">
+                            <div class="invalid-feedback feedback-icon"><i class="fa fa-times"></i>Too young applicants
+                                are not acceptable!</div>
+                            <small class="form-text text-muted">Input your birthday date</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="tuitionFees">Tuition Fees (in Euros)</label>
+                            <input type="number" name="tuitionFees" id="tuitionFees" value="1750" class="form-control"
+                                required min="0" max="3000">
+                            <small class="form-text text-muted">Only up to 3k euros acceptable</small>
+                        </div>
+                        <button type="submit" class="btn btn-outline-success text-dark font-weight-bold">Edit</button>
+                        <button type="update" class="btn btn-outline-info text-dark font-weight-bold">Update</button>
+                        <button value="delete" type="delete" class="btn btn-outline-danger text-dark font-weight-bold"
+                            onclick="deleteForm()">Delete</button>
+                        <button value="reset" type="reset" class="btn btn-outline-warning text-dark font-weight-bold"
+                            onclick="deleteForm()">Clear</button>
+                    </form>
                 </div>
-                <div class="form-group">
-                    <label for="lastname">Lastname</label>
-                    <input type="text" name="lastname" id="sLastname" value="Smith" class="form-control" required
-                        pattern="[a-zA-Z]+" minlength="3" maxlength="40">
-                    <div class="invalid-feedback feedback-icon"><i class="fa fa-times"></i>Numbers, spaces & symbols not
-                        acceptable, 3 to 40 characters input only.</div>
-                    <small class="form-text text-muted">Use only alphabetic characters</small>
-                </div>
-                <div class="form-group">
-                    <label for="birthday">Date of Birth</label>
-                    <input type="date" name="birthday" id="birthday" value="1983-08-07" class="form-control" required>
-                    <small class="form-text text-muted">Input your birthday date</small>
-                </div>
-                <div class="form-group">
-                    <label for="tuitionFees">Tuition Fees (in Euros)</label>
-                    <input type="number" name="tuitionFees" id="tuitionFees" value="1750" class="form-control" required
-                        min="0" max="3000">
-                    <small class="form-text text-muted">Only up to 3k euros acceptable</small>
-                </div>
-                <button type="submit" class="btn btn-outline-success text-dark font-weight-bold">Edit</button>
-                <button type="update" class="btn btn-outline-info text-dark font-weight-bold">Update</button>
-                <button value="delete" type="delete" class="btn btn-outline-danger text-dark font-weight-bold"
-                    onclick="deleteForm()">Delete</button>
-                <button value="reset" type="reset" class="btn btn-outline-warning text-dark font-weight-bold"
-                    onclick="deleteForm()">Clear</button>
-            </form>
+            </div>
         </div>
     </div>
-    <footer style="margin-top: 50px;" class="navbar navbar-expand-lg text-center justify-content-center footer"><b>&copy; Copyright
-            2020 Bootcamp CB10
-            PartTime Java PrivateSchool by Philip Kontekas</b></footer>
-
+    <footer class="navbar navbar-expand-lg text-center justify-content-center footer"><b>&copy; Copyright
+            2020 Bootcamp CB10 PartTime Java PrivateSchool by Philip Kontekas</b></footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"

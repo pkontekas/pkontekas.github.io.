@@ -26,48 +26,54 @@
             </ul>
         </div>
     </nav>
-    <h3 class="h3">Trainer Creation Form</h3>
-    <div class="overlay">
-        <div class="container">
-            <form class="form-format main-form needs-validation" action="" novalidate>
-                <div class="form-group">
-                    <label for="firstname">Firstname</label>
-                    <input type="text" name="firstname" id="tFirstname" class="form-control" placeholder="name" required
-                        pattern="[a-zA-Z]+" minlength="3" maxlength="30">
-                    <div class="invalid-feedback feedback-icon"><i class="fa fa-times"></i>Numbers, spaces & symbols not
-                        acceptable, 3 to 30 characters input only.</div>
-                    <div class="valid-feedback feedback-icon"><i class="fa fa-check"></i>Looks Good!</div>
-                    <small class="form-text text-muted">Use only alphabetic characters</small>
+
+    <div style="background-image: url(../images/college_02.jpg)" class="bg-img">
+        <div class="overlay main-expand">
+            <div style="padding-top: 20%;" class="d-flex justify-content-center align-items-center container">
+                <div class="row">
+                    <form class="form-format main-form formcontainer needs-validation" action="" novalidate>
+                        <h3 style="margin-top: 10px;" class="h3">Trainer Creation Form</h3>
+                        <div class="form-group">
+                            <label for="firstname">Firstname</label>
+                            <input type="text" name="firstname" id="tFirstname" class="form-control" placeholder="name"
+                                required pattern="[a-zA-Z]+" minlength="2" maxlength="30">
+                            <div class="invalid-feedback feedback-icon"><i class="fa fa-times"></i>Numbers, spaces &
+                                symbols not acceptable, 2 to 30 characters input only.</div>
+                            <div class="valid-feedback feedback-icon"><i class="fa fa-check"></i>Looks Good!</div>
+                            <small class="form-text text-muted">Use only alphabetic characters</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastname">Lastname</label>
+                            <input type="text" name="lastname" id="tLastname" class="form-control" placeholder="surname"
+                                required pattern="[a-zA-Z]+" minlength="2" maxlength="40">
+                            <div class="invalid-feedback feedback-icon"><i class="fa fa-times"></i>Numbers, spaces &
+                                symbols not acceptable, 2 to 40 characters input only.</div>
+                            <div class="valid-feedback">Looks Good!</div>
+                            <small class="form-text text-muted">Use only alphabetic characters</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" name="subject" id="subject" class="form-control" required minlength="2"
+                                maxlength="40">
+                            <div class="invalid-feedback feedback-icon"><i class="fa fa-times"></i>2 to 40 acceptable
+                                characters only.</div>
+                            <div class="valid-feedback">Looks Good!</div>
+                            <small class="form-text text-muted">Training Subject such as HTML/SQL/Javascript</small>
+                        </div>
+                        <div class="form-check py-3">
+                            <input type="checkbox" id="accept-terms" class="form-check-input" required>
+                            <label for="accept-terms" class="form-check-label">Accept Terms &amp; Conditions</label>
+                            <div class="invalid-feedback feedback-icon"><i class="fa fa-times"></i>Please accept terms
+                                before Submitting.</div>
+                        </div>
+                        <button type="submit" class="btn btn-outline-success text-dark font-weight-bold"
+                            onclick="submitted()">Submit</button>
+                    </form>
                 </div>
-                <div class="form-group">
-                    <label for="lastname">Lastname</label>
-                    <input type="text" name="lastname" id="tLastname" class="form-control" placeholder="surname"
-                        required pattern="[a-zA-Z]+" minlength="3" maxlength="40">
-                    <div class="invalid-feedback feedback-icon"><i class="fa fa-times"></i>Numbers, spaces & symbols not
-                        acceptable, 3 to 40 characters input only.</div>
-                    <div class="valid-feedback">Looks Good!</div>
-                    <small class="form-text text-muted">Use only alphabetic characters</small>
-                </div>
-                <div class="form-group">
-                    <label for="subject">Subject</label>
-                    <input type="text" name="subject" id="subject" class="form-control" required minlength="2"
-                        maxlength="40">
-                    <div class="invalid-feedback feedback-icon"><i class="fa fa-times"></i>2 to 40 acceptable characters
-                        only.</div>
-                    <div class="valid-feedback">Looks Good!</div>
-                    <small class="form-text text-muted">Training Subject such as HTML/SQL/Javascript</small>
-                </div>
-                <div class="form-check py-3">
-                    <input type="checkbox" id="accept-terms" class="form-check-input" required>
-                    <label for="accept-terms" class="form-check-label">Accept Terms &amp; Conditions</label>
-                    <div class="invalid-feedback feedback-icon"><i class="fa fa-times"></i>Please accept terms before
-                        Submitting.</div>
-                </div>
-                <button type="submit" class="btn btn-outline-success text-dark font-weight-bold">Submit</button>
-            </form>
+            </div>
         </div>
     </div>
-    <footer style="margin-top: 50px;" class="navbar navbar-expand-lg text-center justify-content-center footer"><b>&copy; Copyright
+    <footer class="navbar navbar-expand-lg text-center justify-content-center footer"><b>&copy; Copyright
             2020 Bootcamp CB10
             PartTime Java PrivateSchool by Philip Kontekas</b></footer>
 

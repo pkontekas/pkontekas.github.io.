@@ -28,38 +28,46 @@
             </ul>
         </div>
     </nav>
-    <h3 class="h3">Assignment Handouts</h3>
-    <div class="overlay">
-        <div class="container">
-            <form class="form-format main-form needs-validation" action="" novalidate>
-                <div class="form-group">
-                    <label for="assSelect"><br><br>Assignment Selection</label>
-                    <select name="assSelect" id="assSelect" class="form-control" required>
-                        <option value="" selected disabled hidden>Choose one</option>
-                        <option value="ass1">Assignment 1 Private School SQL</option>
-                        <option value="ass2">Assignment 2 Zoo Java</option>
-                        <option value="ass3">Assignment 3 Efood C#</option>
-                        <option value="ass4">Assignment 4 Big office</option>
-                        <option value="ass5">Assignment 5 Club</option>
-                    </select>
-                    <small class="form-text text-muted">Select an assignment to handout</small>
+
+    <div style="background-image: url(../images/nature_03.jpg)" class="bg-img">
+        <div class="overlay main-expand">
+            <div class="d-flex justify-content-center align-items-center container">
+                <div class="row">
+                    <form class="form-format main-form formcontainer needs-validation" action="" novalidate>
+                        <h3 class="h3">Assignment Handouts</h3>
+                        <div class="form-group">
+                            <label for="assSelect"><br><br>Assignment Selection</label>
+                            <select name="assSelect" id="assSelect" class="form-control" required>
+                                <option value="" selected disabled hidden>Choose one</option>
+                                <option value="ass1">Assignment 1 Private School SQL</option>
+                                <option value="ass2">Assignment 2 Zoo Java</option>
+                                <option value="ass3">Assignment 3 Efood C#</option>
+                                <option value="ass4">Assignment 4 Big office</option>
+                                <option value="ass5">Assignment 5 Club</option>
+                            </select>
+                            <small class="form-text text-muted">Select an assignment to handout</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="courseSelect">Course Selection</label>
+                            <select name="courseSelect" id="courseSelect" class="form-control" multiple required
+                                size="5">
+                                <option value="course1">Course 1 Java Full-time CB10</option>
+                                <option value="course2">Course 2 C# Part-time CB09</option>
+                                <option value="course3">Course 3 Javascript Full-time CB11</option>
+                                <option value="course4">Course 4 Java Part-time CB08</option>
+                                <option value="course5">Course 5 C# Full-time CB11</option>
+                            </select>
+                            <small class="form-text text-muted">Select multiple courses for the Assignment</small>
+                        </div>
+                        <button type="submit" class="btn btn-outline-success text-dark font-weight-bold"
+                            onclick="submitted()">Handout</button>
+                    </form>
                 </div>
-                <div class="form-group">
-                    <label for="courseSelect">Course Selection</label>
-                    <select name="courseSelect" id="courseSelect" class="form-control" multiple required size="5">
-                        <option value="course1">Course 1 Java Full-time CB10</option>
-                        <option value="course2">Course 2 C# Part-time CB09</option>
-                        <option value="course3">Course 3 Javascript Full-time CB11</option>
-                        <option value="course4">Course 4 Java Part-time CB08</option>
-                        <option value="course5">Course 5 C# Full-time CB11</option>
-                    </select>
-                    <small class="form-text text-muted">Select multiple courses for the Assignment</small>
-                </div>
-                <button type="submit" class="btn btn-outline-success text-dark font-weight-bold">Handout</button>
-            </form>
+            </div>
         </div>
     </div>
-    <footer style="margin-top: 30px;" class="navbar text-center navbar-expand-lg text-center justify-content-center footer"><b>&copy; Copyright
+    <footer class="navbar text-center navbar-expand-lg text-center justify-content-center footer"><b>&copy;
+            Copyright
             2020 Bootcamp CB10
             PartTime Java PrivateSchool by Philip Kontekas</b></footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

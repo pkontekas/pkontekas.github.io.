@@ -12,15 +12,41 @@
 
 .navbar-toggler{
     background:#F97300 !important; 
-    /* display: block; */
 }
 
 .bg-dark{background-color:#343a40!important;}
 
 .bg-primary{background-color:#007bff!important;}
 
-.form-format{width: 90%; margin: auto;}
+.form-format{width: 95%; margin: auto;}
 
 html,h1,h2,h3,h4,h5,h6,a{font-family: "Raleway";}
 
-.h3{color: gray; text-align: center; margin-top: 90px; margin-bottom: 20px;}
+.h3{color: gray; text-align: center; margin-top: 40px; margin-bottom: 20px;}
+
+.main-expand{
+  min-height: 100%;
+  padding-bottom: 50px;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.bg-img {
+    background-image: url("../images/nature_01.jpg");
+    min-height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
+.formcontainer {
+    position: center;
+    margin: 10px;
+    max-width: 765px;
+    padding: 12px;
+    background-color: white;
+  }
