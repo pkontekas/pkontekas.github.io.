@@ -9,3 +9,6 @@ Requirements found in pdf.
 
 Utilized:
 HTML/CSS/JS/Bootstrap
+
+This site is hosted here: (thanks GitHub!)
+https://pkontekas.github.io/pkontekas.github.io./index.html
